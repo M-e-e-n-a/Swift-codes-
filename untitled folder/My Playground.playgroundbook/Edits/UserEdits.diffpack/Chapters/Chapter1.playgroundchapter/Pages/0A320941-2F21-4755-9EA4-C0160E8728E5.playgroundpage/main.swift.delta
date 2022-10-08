@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BaseFile</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
+	<key>Diffs</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//first normally recurring character
+ var a="hellogeeks"
+var f=1
+var list:[Character]=[]
+for i in a{
+    list.append(i)
+}
+for i in 0...a.count-1{
+    for j in i+1...a.count-1{
+        if (list[i]==list[j]){
+            print(list[i])
+            f=0
+            break
+        }
+    }
+    if (f==0){
+        break
+    }
+}
+
+
+
+//first consecutively recurring character
+import Foundation
+var str="hellogeeks"
+var l=str.count
+for i in str.indices{
+    var g=str[i]
+    str.remove(at:i)
+    for j in str.indices{
+        if g==str[j]{
+            print(g)
+            abort()
+        }
+    }
+}
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 590}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>FormatVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
